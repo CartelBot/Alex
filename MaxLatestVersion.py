@@ -48,7 +48,7 @@ from youtube_dl import YoutubeDL
 import requests, json
 _session = requests.session()
 requests.packages.urllib3.disable_warnings()
-maxbots = TEAMBOTMAXv2("maxloginsb@gmail.com","0954517662za",appName="IOSIPAD\t10.1.1\tiPhone OS\t1")
+maxbots = TEAMBOTMAXv2("xxx","",appName="IOSIPAD\t10.1.1\tiPhone OS\t1")
 print ('++ Auth Token : %s' % maxbots.authToken)
 maxbotsMid = maxbots.profile.mid
 maxbotsStart = time.time()
@@ -2165,7 +2165,7 @@ def teambotmax(op):
             contact = maxbots.getContact(op.param2)
             teambotmaxZ = {
                 "type": "template",
-                "altText": "{} มีคนออกกลุ่ม".format(str(maxbots.getContact(maxbotsMid).displayName)),
+                "altText": "{} มีคนออกกลุ่ม".format(str(maxbots.getContact(maxbotsMid).displayName)),
                 "baseSize": {
                     "height": 1040,
                     "width": 1040
